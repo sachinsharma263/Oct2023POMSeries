@@ -21,6 +21,8 @@ public class LoginPage extends BasePage {
 	By signUpNowLink = By.linkText("Sign Up Now2");
 
 	By errorMsg = By.id("error");
+	
+	By random=By.id("random");
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
