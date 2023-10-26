@@ -1,21 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Test cases verifyLoginPageTitleTest]]>
+    </line>
+    <line>
+      <![CDATA[status 1]]>
+    </line>
+    <line>
+      <![CDATA[Test cases verifySignUpNowLinkTest]]>
+    </line>
+    <line>
+      <![CDATA[Test cases loginTest]]>
+    </line>
+    <line>
+      <![CDATA[status 1]]>
+    </line>
+    <line>
+      <![CDATA[Test cases verifyHomePageTitleTest]]>
+    </line>
+    <line>
+      <![CDATA[status 1]]>
+    </line>
+    <line>
+      <![CDATA[Test cases verifyHomePageHeaderTest]]>
+    </line>
+    <line>
+      <![CDATA[status 1]]>
+    </line>
+    <line>
+      <![CDATA[Test cases verifyLoggedInUserTest]]>
+    </line>
+    <line>
+      <![CDATA[status 1]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-10-25T21:53:51 IST" name="Default suite" finished-at="2023-10-25T21:54:55 IST" duration-ms="64202">
+  <suite started-at="2023-10-25T23:54:25 IST" name="trcrm app regression suite" finished-at="2023-10-25T23:55:43 IST" duration-ms="77920">
     <groups>
     </groups>
-    <test started-at="2023-10-25T21:53:51 IST" name="Default test" finished-at="2023-10-25T21:54:55 IST" duration-ms="64202">
+    <test started-at="2023-10-25T23:54:25 IST" name="Login Page test" finished-at="2023-10-25T23:55:01 IST" duration-ms="35490">
       <class name="com.qa.trcrm.tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.trcrm.tests.LoginPageTest@710c2b53]" started-at="2023-10-25T21:53:51 IST" name="setUp" finished-at="2023-10-25T21:54:23 IST" duration-ms="31984" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.trcrm.tests.LoginPageTest@7776ab]" started-at="2023-10-25T23:54:25 IST" name="setUp" finished-at="2023-10-25T23:54:45 IST" duration-ms="19755" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.trcrm.tests.LoginPageTest@710c2b53]" started-at="2023-10-25T21:54:23 IST" name="verifyLoginPageTitleTest" finished-at="2023-10-25T21:54:23 IST" duration-ms="45" status="PASS">
+        <test-method signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.trcrm.tests.LoginPageTest@7776ab]" started-at="2023-10-25T23:54:45 IST" name="verifyLoginPageTitleTest" finished-at="2023-10-25T23:54:45 IST" duration-ms="45" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Test cases verifyLoginPageTitleTest]]>
+            </line>
+            <line>
+              <![CDATA[status 1]]>
+            </line>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method signature="verifySignUpNowLinkTest()[pri:2, instance:com.qa.trcrm.tests.LoginPageTest@710c2b53]" started-at="2023-10-25T21:54:23 IST" name="verifySignUpNowLinkTest" finished-at="2023-10-25T21:54:23 IST" duration-ms="171" status="FAIL">
+        <test-method signature="verifySignUpNowLinkTest()[pri:2, instance:com.qa.trcrm.tests.LoginPageTest@7776ab]" started-at="2023-10-25T23:54:45 IST" name="verifySignUpNowLinkTest" finished-at="2023-10-25T23:54:45 IST" duration-ms="297" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because the return value of "com.qa.trcrm.utils.ElementUtil.getElement(org.openqa.selenium.By)" is null]]>
@@ -57,17 +96,68 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
+            <line>
+              <![CDATA[Test cases verifySignUpNowLinkTest]]>
+            </line>
           </reporter-output>
         </test-method> <!-- verifySignUpNowLinkTest -->
-        <test-method signature="loginTest()[pri:3, instance:com.qa.trcrm.tests.LoginPageTest@710c2b53]" started-at="2023-10-25T21:54:23 IST" name="loginTest" finished-at="2023-10-25T21:54:52 IST" duration-ms="28240" status="PASS">
+        <test-method signature="loginTest()[pri:3, instance:com.qa.trcrm.tests.LoginPageTest@7776ab]" started-at="2023-10-25T23:54:46 IST" name="loginTest" finished-at="2023-10-25T23:54:57 IST" duration-ms="11433" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Test cases loginTest]]>
+            </line>
+            <line>
+              <![CDATA[status 1]]>
+            </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.trcrm.tests.LoginPageTest@710c2b53]" started-at="2023-10-25T21:54:52 IST" name="tearDown" finished-at="2023-10-25T21:54:55 IST" duration-ms="3650" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.trcrm.tests.LoginPageTest@7776ab]" started-at="2023-10-25T23:54:57 IST" name="tearDown" finished-at="2023-10-25T23:55:01 IST" duration-ms="3492" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.trcrm.tests.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Login Page test -->
+    <test started-at="2023-10-25T23:55:02 IST" name="Home Page test" finished-at="2023-10-25T23:55:43 IST" duration-ms="41174">
+      <class name="com.qa.trcrm.tests.HomePageTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.qa.trcrm.tests.HomePageTest@6aa3a905]" started-at="2023-10-25T23:55:02 IST" name="beforeTest" finished-at="2023-10-25T23:55:39 IST" duration-ms="37529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="verifyHomePageTitleTest()[pri:1, instance:com.qa.trcrm.tests.HomePageTest@6aa3a905]" started-at="2023-10-25T23:55:39 IST" name="verifyHomePageTitleTest" finished-at="2023-10-25T23:55:39 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test cases verifyHomePageTitleTest]]>
+            </line>
+            <line>
+              <![CDATA[status 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method signature="verifyHomePageHeaderTest()[pri:2, instance:com.qa.trcrm.tests.HomePageTest@6aa3a905]" started-at="2023-10-25T23:55:39 IST" name="verifyHomePageHeaderTest" finished-at="2023-10-25T23:55:40 IST" duration-ms="84" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test cases verifyHomePageHeaderTest]]>
+            </line>
+            <line>
+              <![CDATA[status 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageHeaderTest -->
+        <test-method signature="verifyLoggedInUserTest()[pri:3, instance:com.qa.trcrm.tests.HomePageTest@6aa3a905]" started-at="2023-10-25T23:55:40 IST" name="verifyLoggedInUserTest" finished-at="2023-10-25T23:55:40 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test cases verifyLoggedInUserTest]]>
+            </line>
+            <line>
+              <![CDATA[status 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoggedInUserTest -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.qa.trcrm.tests.HomePageTest@6aa3a905]" started-at="2023-10-25T23:55:40 IST" name="afterTest" finished-at="2023-10-25T23:55:43 IST" duration-ms="3478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.qa.trcrm.tests.HomePageTest -->
+    </test> <!-- Home Page test -->
+  </suite> <!-- trcrm app regression suite -->
 </testng-results>

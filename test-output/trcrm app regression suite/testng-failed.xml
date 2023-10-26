@@ -15,15 +15,4 @@
       </class> <!-- com.qa.trcrm.tests.LoginPageTest -->
     </classes>
   </test> <!-- Login Page test(failed) -->
-  <test thread-count="5" name="Home Page test(failed)">
-    <classes>
-      <class name="com.qa.trcrm.tests.HomePageTest">
-        <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="verifyLoggedInUserTest"/>
-        </methods>
-      </class> <!-- com.qa.trcrm.tests.HomePageTest -->
-    </classes>
-  </test> <!-- Home Page test(failed) -->
 </suite> <!-- Failed suite [trcrm app regression suite] -->

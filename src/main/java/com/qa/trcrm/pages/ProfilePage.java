@@ -9,7 +9,13 @@ public class ProfilePage {
 	public ProfilePage(WebDriver driver) {
 		this.driver = driver;
 	}
+
 	public void m2() {
 		System.out.println("remote");
+	}
+
+	public void m1() {
+		System.out.println("local");
+
 	}
 }
