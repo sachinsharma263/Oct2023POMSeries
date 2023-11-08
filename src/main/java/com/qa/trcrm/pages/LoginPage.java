@@ -7,12 +7,14 @@ import com.qa.trcrm.base.BasePage;
 import com.qa.trcrm.pojo.Credentials;
 import com.qa.trcrm.utils.AppConstants;
 import com.qa.trcrm.utils.ElementUtil;
+import com.qa.trcrm.utils.JavaScriptUtil;
 
 public class LoginPage extends BasePage {
 
 	WebDriver driver;
-	HomePage homePage;
+	// HomePage homePage;
 	ElementUtil util;
+	JavaScriptUtil jsUtil;
 
 	By emailId = By.id("_username");
 	By password = By.id("_password");
@@ -21,12 +23,13 @@ public class LoginPage extends BasePage {
 	By signUpNowLink = By.linkText("Sign Up Now2");
 
 	By errorMsg = By.id("error");
-	
-	By random=By.id("random");
+
+	By random = By.id("random");
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		util = new ElementUtil(driver);
+		jsUtil = new JavaScriptUtil(driver);
 	}
 
 	public String getLoginPageTitle() {
