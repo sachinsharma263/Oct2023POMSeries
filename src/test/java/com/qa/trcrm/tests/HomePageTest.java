@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import com.qa.trcrm.base.BasePage;
 import com.qa.trcrm.pages.HomePage;
 import com.qa.trcrm.pages.LoginPage;
+import com.qa.trcrm.pojo.Credentials;
 import com.qa.trcrm.utils.AppConstants;
 
 public class HomePageTest {
@@ -20,6 +21,7 @@ public class HomePageTest {
 	Properties prop;
 	LoginPage loginPage;
 	HomePage homePage;
+	Credentials credentials;
 
 	@BeforeTest
 	public void beforeTest() {
@@ -27,7 +29,9 @@ public class HomePageTest {
 		prop = basePage.init_prop();
 		driver = basePage.init_driver(prop);
 		loginPage = new LoginPage(driver);
-		homePage = loginPage.doLogin(prop.getProperty("email"), prop.getProperty("password"));
+		credentials=new Credentials(prop.getProperty("email"), prop.getProperty("password"));
+		//homePage = loginPage.doLogin(prop.getProperty("email"), prop.getProperty("password"));
+		homePage=loginPage.doLogin(credentials);
 
 	}
 

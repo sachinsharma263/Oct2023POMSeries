@@ -34,7 +34,7 @@ public class ElementUtil {
 		WebElement element = null;
 		try {
 			element = driver.findElement(locator);
-			//jsUtil.flash(element);
+			// jsUtil.flash(element);
 		} catch (Exception e) {
 			System.out.println("some exception occured while creating the web element: " + locator);
 			System.out.println(e.getMessage());
@@ -84,12 +84,12 @@ public class ElementUtil {
 	}
 
 	public void waitForPresenceOfElementLocated(By locator) {
-		
+
 		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 	}
 
 	public WebElement waitForvisibilityOfElement(By locator) {
-		
+
 		wait.until(ExpectedConditions.visibilityOf(getElement(locator)));
 
 		return getElement(locator);
@@ -119,5 +119,9 @@ public class ElementUtil {
 
 	public void doClear(By locator) {
 		getElement(locator).clear();
+	}
+
+	public void doQuit() {
+		driver.quit();
 	}
 }

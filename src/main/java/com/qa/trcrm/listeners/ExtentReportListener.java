@@ -101,7 +101,8 @@ public class ExtentReportListener extends BasePage implements ITestListener {
 
 		
 		  try { test.get().fail(result.getThrowable(),
-		  MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot()).build()); }
+		 // MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot()).build()); 
+				  MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot(result)).build());}
 		  catch (Throwable e) { System.err
 		  .println("Exception thrown while updating test fail status " +
 		  Arrays.toString(e.getStackTrace())); }

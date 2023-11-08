@@ -13,11 +13,10 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
+import org.testng.ITestResult;
 
 public class BasePage {
 
@@ -144,6 +143,20 @@ public class BasePage {
 			System.out.println("**********************");
 			e.printStackTrace();
 			System.out.println("**********************");
+		}
+		return path;
+
+	}
+	public String getScreenshot(ITestResult iTest)
+	{
+		File src=((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.FILE);
+		String path=System.getProperty("user.dir")+"/test-output/"+iTest.getMethod().getConstructorOrMethod().getName()+"-"+getDateTime()+".png";
+		
+		try {
+			FileUtils.copyFile(src, new File(path));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		return path;
 
