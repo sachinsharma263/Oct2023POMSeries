@@ -101,6 +101,11 @@ public class ElementUtil {
 		return doGetTitle();
 	}
 
+	/**
+	 * This method is used to get the title of web page
+	 * @param locator
+	 * @return web element
+	 */
 	public String doGetTitle() {
 		return driver.getTitle();
 	}
